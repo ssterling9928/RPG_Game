@@ -14,6 +14,12 @@ AAura_CharacterBase::AAura_CharacterBase()
 	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
+UAbilitySystemComponent* AAura_CharacterBase::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}
+
+
 // Called when the game starts or when spawned
 void AAura_CharacterBase::BeginPlay()
 {

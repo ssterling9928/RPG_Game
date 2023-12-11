@@ -16,9 +16,12 @@ class RPG_GAME_API AAuraEnemy : public AAura_CharacterBase, public IEnemyInterfa
 {
 	GENERATED_BODY()
 
+public:
 	AAuraEnemy();
+	
 	virtual void HighlightActor() override;
 	virtual void UnHighlightActor() override;
 
-	
+protected:
+	virtual void BeginPlay() override;
 };

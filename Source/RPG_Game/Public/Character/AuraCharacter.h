@@ -16,5 +16,10 @@ class RPG_GAME_API AAuraCharacter : public AAura_CharacterBase
 
 public:
 	AAuraCharacter();
-	
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
+
+private:
+	void InitAbilityActorInfo();
 };
+
