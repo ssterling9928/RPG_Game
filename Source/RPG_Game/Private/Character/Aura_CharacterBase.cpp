@@ -26,3 +26,7 @@ void AAura_CharacterBase::BeginPlay()
 	Super::BeginPlay();
 	
 }
+
+void AAura_CharacterBase::InitAbilityActorInfo()
+{
+}
